@@ -1,9 +1,10 @@
 <script>
 import AppMain from "./components/AppMain.vue";
+import { store } from "./store.js";
 export default {
   data() {
     return {
-
+      store,
     }
   },
   components: {AppMain}
