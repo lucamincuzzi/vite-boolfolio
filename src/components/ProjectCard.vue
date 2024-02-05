@@ -18,6 +18,7 @@ export default {
         <div class="card-body">
             <h4>{{ project.title }}</h4>
             <p>{{ project.description }}</p>
+            <router-link :to="{ name: 'single-project', params: {slug: project.slug} }">Dettagli</router-link>
         </div>
     </div>
 </template>
